@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SAD360.MVC.ViewModels.FuncionarioViewModel>
+
+@{
+    ViewBag.Title = "Funcionários";
+}
+
+<h2>Funcionários</h2>
+
+<p>
+    @Html.ActionLink("Novo Funcionário", "Create") | @Html.ActionLink("Alterar Senha", "AlteraSenha")
+</p>
+<div class="table-responsive">    
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.setor)
+                </th>
+                <th>
+                    @Html.DisplayName("Administrador?")
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {                
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.setor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ehAdministrador)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Alterar", "Edit", new { id = item.FuncionarioId }) |
+                        @Html.ActionLink("Detalhes", "Details", new { id = item.FuncionarioId }) |
+                        @Html.ActionLink("Excluir", "Delete", new { id = item.FuncionarioId }, htmlAttributes: new { @class = "excluiFuncionario" })
+                    </td>
+                </tr>                
+            }
+
+        </table>    
+</div>

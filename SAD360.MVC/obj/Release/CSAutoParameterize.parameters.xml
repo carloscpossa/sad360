@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SAD360-Web.config Connection String" description="SAD360 Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:oykctbyg1e.database.windows.net,1433;Initial Catalog=sad360carlos_db;User ID=mastersig@oykctbyg1e;Password=!Chcp9883" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Carlos\\Pós\\Trabalho\ de\ Conclusão\ de\ Curso\\Implementacao\\SAD360\\SAD360\.MVC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SAD360']/@connectionString" />
+  </parameter>
+</parameters>

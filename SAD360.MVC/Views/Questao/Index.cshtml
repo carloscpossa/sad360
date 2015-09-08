@@ -1,0 +1,37 @@
+﻿@model IEnumerable<SAD360.MVC.ViewModels.QuestaoViewModel>
+
+@{
+    ViewBag.Title = "Questões";
+}
+
+<h2>Questões</h2>
+
+<p>
+    @Html.ActionLink("Incluir Questão", "Create", new { id = ViewBag.idQuestionario })
+</p>
+<p>
+    @ViewBag.questionario
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.texto)
+        </th>        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.texto)
+        </td>        
+        <td>
+            @Html.ActionLink("Alterar", "Edit", new { id=item.QuestaoId }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.QuestaoId }) |
+            @Html.ActionLink("Excluir", "Delete", new { id = item.QuestaoId }, htmlAttributes: new { @class = "excluiQuestao" })
+        </td>
+    </tr>
+}
+
+</table>

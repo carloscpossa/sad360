@@ -1,0 +1,56 @@
+﻿@model List<SAD360.MVC.ViewModels.QuestionarioViewModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SAD360 - Relatório de Avaliações</title>
+    <meta charset="utf-8" lang="pt-br" />
+    <link rel="stylesheet" href="~/Content/relatorio.css" />
+</head>
+<body>
+    <header>
+        <h2>Relatório de Avaliações</h2>
+        <a href="~/Relatorio/Index">Voltar</a>
+    </header>
+    <section>
+        <div class="filtros">
+            <p class="negrito">Filtros:</p>
+            <p>Período de Respostas das Avaliações: @ViewBag.filtroData</p>
+            <p>Usuário Avaliado: @ViewBag.avaliado</p>
+            <p>Questionários: @ViewBag.questionario</p>
+        </div>
+
+        <div class="questionarios">
+            @foreach (var questionario in Model)
+            {
+                <p class="negrito">@questionario.descricao</p>               
+                
+                <ol>
+                    @foreach (var questao in questionario.questoes)
+                    {
+                        <li class="negrito">
+                            @questao.texto
+                            @foreach (var alternativa in questao.alternativas)
+                            {
+                                <p>@alternativa.texto - @alternativa.percentual %</p>
+                            }
+                        </li>
+                    }
+                </ol>
+
+                <br />
+            }
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

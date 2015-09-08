@@ -1,0 +1,12 @@
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\SAD360.Infra.Data.dll.config
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\SAD360.Infra.Data.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\SAD360.Infra.Data.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\EntityFramework.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\SAD360.Domain.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\EntityFramework.xml
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\obj\Release\SAD360.Infra.Data.csprojResolveAssemblyReference.cache
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\obj\Release\SAD360.Infra.Data.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Infra.Data\obj\Release\SAD360.Infra.Data.pdb

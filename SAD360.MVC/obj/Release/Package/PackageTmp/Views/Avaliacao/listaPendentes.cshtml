@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SAD360.MVC.ViewModels.AvaliacaoViewModel>
+
+@{
+    ViewBag.Title = "Alterar Avaliação";
+}
+
+<h2>Alterar Avaliação</h2>
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.FuncionarioAvaliadoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FuncionarioAvaliadorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dataInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dataTermino)
+        </th>
+                       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.funcionarioAvaliado.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.funcionarioAvaliador.nome)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.dataInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dataTermino)
+        </td>        
+        <td>
+            @Html.ActionLink("Alterar", "Edit", new { id=item.AvaliacaoId })            
+        </td>
+    </tr>
+}
+
+</table>

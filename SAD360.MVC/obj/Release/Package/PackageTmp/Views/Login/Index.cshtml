@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" lang="pt-br" />
+    <title>Login - SAD360</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <h1>SAD360</h1>
+        <p>Sistema de Avaliação de Desempenho 360º</p>
+    </header>
+    <section>        
+        <div class="col-xs-12 col-sm-4 col-md-4"></div>            
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                
+                    <form action="/Login/Index" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <fieldset>
+                            <legend>Login</legend>
+                            <div class="form-group">
+                                <label>Usuário</label>
+                                <input type="text" class="form-control" placeholder="Digite aqui a matrícula" name="txtusuario" id="txtUsuario" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" class="form-control" placeholder="Digite a senha" name="txtSenha" id="txtSenha" value="" />
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="chbLembra"/>Lembrar-me
+                                </label>
+                            </div>
+
+                            @if (ViewBag.UsuarioInvalido != null && ViewBag.UsuarioInvalido)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    <p>Usuário ou senha inválidos.</p>
+                                </div>
+                            }
+                            
+                            <button type="submit" class="btn btn-default">Entrar</button>
+                        </fieldset>
+                    </form>                
+            </div>
+        <div class="col-xs-12 col-sm-4 col-md-4"></div>
+    </section>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")    
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿@model SAD360.MVC.ViewModels.QuestaoViewModel
+
+@{
+    ViewBag.Title = "Incluir Questão";
+}
+
+<h2>Incluir Questão</h2>
+
+<p>
+    @ViewBag.questionario
+</p>
+
+
+@using (Html.BeginForm("Create", "Questao", FormMethod.Post, new { name = "frmCriaQuestao" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">        
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.texto, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.texto, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.texto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+                
+        <div class="form-group">
+            @Html.Label("Alternativa de Resposta 1", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="text" id="txtAlternativa1" name="txtAlternativa1" class="form-control text-box single-line" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Alternativa de Resposta 2", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="text" id="txtAlternativa2"  name="txtAlternativa2" class="form-control text-box single-line" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Alternativa de Resposta 3", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="text" id="txtAlternativa3"  name="txtAlternativa3" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Alternativa de Resposta 4", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="text" id="txtAlternativa4"  name="txtAlternativa4" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Alternativa de Resposta 5", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="text" id="txtAlternativa5"  name="txtAlternativa5" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Incluir" class="btn btn-default" id="incluiQuestao" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

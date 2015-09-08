@@ -1,0 +1,9 @@
+D:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Debug\SAD360.Domain.dll
+D:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Debug\SAD360.Domain.pdb
+D:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Debug\SAD360.Domain.dll
+D:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Debug\SAD360.Domain.pdb
+D:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Debug\SAD360.Domain.csprojResolveAssemblyReference.cache
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Debug\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Debug\SAD360.Domain.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Debug\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Debug\SAD360.Domain.pdb

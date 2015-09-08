@@ -1,0 +1,7 @@
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\bin\Release\SAD360.Application.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\bin\Release\SAD360.Application.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\bin\Release\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\bin\Release\SAD360.Domain.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\obj\Release\SAD360.Application.csprojResolveAssemblyReference.cache
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\obj\Release\SAD360.Application.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Application\obj\Release\SAD360.Application.pdb

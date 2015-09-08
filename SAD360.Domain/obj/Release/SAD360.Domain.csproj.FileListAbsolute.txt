@@ -1,0 +1,4 @@
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Release\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\bin\Release\SAD360.Domain.pdb
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Release\SAD360.Domain.dll
+E:\Carlos\Pós\Trabalho de Conclusão de Curso\Implementacao\SAD360\SAD360.Domain\obj\Release\SAD360.Domain.pdb

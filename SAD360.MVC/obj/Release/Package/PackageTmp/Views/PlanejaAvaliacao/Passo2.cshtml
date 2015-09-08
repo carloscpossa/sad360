@@ -1,0 +1,51 @@
+﻿@model SAD360.MVC.ViewModels.QuestionarioViewModel
+
+@{
+    ViewBag.Title = "Planejar Avaliação";
+}
+
+<h2>Planejar Avaliação</h2>
+<p class="passo">Confirmação de Questionário - Passo 2 de 4</p>
+
+@using (Html.BeginForm("Passo2", "PlanejaAvaliacao", FormMethod.Post, new { name = "frmPlanejaAvaliacao2" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            <p class="negrito">Descrição: @Model.descricao</p>
+            <input type="submit" value="Prosseguir" class="btn btn-default" id="btnPasso2" />
+        </div>
+
+        <div class="form-group">
+            <p class="negrito">Questões</p>
+            <ol>
+                @foreach (var item in Model.questoes)
+                {
+                    <li>
+                        <p class="negrito">@item.texto</p>
+                        <p>Alternativas:</p>
+                        <ul class="semMarcadores">
+                            @foreach (var alternativa in item.alternativas)
+                        {
+                                <li>@alternativa.texto</li>
+                        }
+                        </ul>
+                    </li>
+                }
+            </ol>
+
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Prosseguir" class="btn btn-default" id="btnPasso2" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

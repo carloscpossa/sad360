@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SAD360.MVC.ViewModels.FuncionarioViewModel>
+
+@{
+    ViewBag.Title = "Planejar Avaliação";
+}
+
+<h2>Planejar Avaliação</h2>
+<p class="passo">Funcionários a serem avaliados - Passo 3 de 4</p>
+
+<input type="submit" value="Marcar Todos" class="btn btn-default" id="marcar" />
+<input type="submit" value="Desmarcar Todos" class="btn btn-default" id="desmarcar" />
+
+<hr />
+
+@using (Html.BeginForm("Passo3", "PlanejaAvaliacao", FormMethod.Post, new { name = "frmPlanejaAvaliacao3" }))
+{   
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">        
+
+        <div class="form-group">
+            @foreach (var funcionario in Model)
+            {
+                <input type="checkbox" value="@funcionario.FuncionarioId" name="@funcionario.FuncionarioId" class="marcar" id="funcionario"/>@funcionario.nome
+                <br />
+            }            
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Prosseguir" class="btn btn-default" id="btnPasso3" />
+        </div>
+
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

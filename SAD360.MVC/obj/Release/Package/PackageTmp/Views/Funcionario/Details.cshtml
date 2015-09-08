@@ -1,0 +1,66 @@
+﻿@model SAD360.MVC.ViewModels.FuncionarioViewModel
+
+@{
+    ViewBag.Title = "Detalhes do Funcionário";
+}
+
+<h2>Detalhes do Funcionário</h2>
+
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.matricula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.setor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.setor)
+        </dd>               
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GerenteId)
+        </dt>
+
+        <dd>
+            @ViewBag.responsavel
+        </dd>
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ehAdministrador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ehAdministrador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ehGerente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ehGerente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Alterar", "Edit", new { id = Model.FuncionarioId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

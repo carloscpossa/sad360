@@ -1,0 +1,22 @@
+﻿using SAD360.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SAD360.Application.Interfaces
+{
+    public interface IAvaliacaoAppService : IAppServiceBase<Avaliacao>
+    {
+        void geraAvaliacao(DateTime dataInicio, DateTime dataFim, int questionario, int avaliado, int avaliador, int AdministradorId);
+
+        IEnumerable<Avaliacao> buscaPendentesPorAvaliadorId(int id);
+
+        void SalvarRespostas(Avaliacao avaliacao);
+
+        IEnumerable<Avaliacao> pesquisa(int avaliadoId, DateTime dataInicioPreenchimento, DateTime dataTerminoPreenchimento, int? questionarioId);
+
+        IEnumerable<Avaliacao> buscaAvaliacoesPendentes();
+    }
+}
