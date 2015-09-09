@@ -86,9 +86,11 @@ namespace SAD360.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(QuestionarioViewModel questionario)
         {
+            this.idUsuario = Convert.ToInt32(new Criptografia().Decrypt(User.Identity.Name));
             if (ModelState.IsValid)
             {
                 Questionario quest = Mapper.Map<QuestionarioViewModel, Questionario>(questionario);
+                quest.AdministradorId = this.idUsuario;
                 _questionarioApp.Update(quest);
                 return RedirectToAction("Index");
             }
